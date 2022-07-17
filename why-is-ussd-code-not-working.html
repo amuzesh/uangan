@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Why Is Ussd Code Not Working at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "Why Is Ussd Code Not Working",
+  "datePublished": "2022-04-28T22:53:17Z",
+  "image": "https://tse1.mm.bing.net/th?q=why%20is%20ussd%20code%20not%20working",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=why%20is%20ussd%20code%20not%20working&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=why%20is%20ussd%20code%20not%20working" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=why%20is%20ussd%20code%20not%20working" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Why Is Ussd Code Not Working at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Why Is Ussd Code Not Working</h2>
+    <p><strong>Why Is Ussd Code Not Working</strong>. But, you must understand that you haven&#039;t actually obtained those permissions just by declaring them in the manifest. So , you must implement a boot completed broadcast receiver in your application.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=why%20is%20ussd%20code%20not%20working" alt="How to Run a USSD Code 8 Steps (with Pictures) wikiHow" />
+        <br>
+        <figcaption>How to Run a USSD Code 8 Steps (with Pictures) wikiHow from www.wikihow.com</figcaption>
+    </figure>
+        <p>
+        Normally you should receive feedback whether setting the smsc was successful. Therefore you will need to have sufficient account. Bcoz.when u dial a ussd code to know ur data balance (net.
+    </p>
+    <h3>How to Run a USSD Code 8 Steps (with Pictures) wikiHow</h3>
+    <p>But, you must understand that you haven&#039;t actually obtained those permissions just by declaring them in the manifest. I have a nokia and htc both wm7 mango and nokia lumia 900 non of the windows works with ussd version2. And that&#039;s the problem it seem like windows doesn&#039;t support ussd version 2. Today i noticed the bsnl ussd code *444# is not working.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Updated Not Working Enable and Disable TMobile&#039;s Binge On With USSD" data-src="https://i2.wp.com/1.bp.blogspot.com/-EBKlxgY2afU/Vpf60X_6T9I/AAAAAAAANfQ/NScVngODaTc/s1600/BingeOnCodes.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.prepaidphonenews.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Still running so after few seconds due to. I have a nokia and htc both wm7 mango and nokia lumia 900 non of the windows works with ussd version2. Hope we can get nokia to have a tool on the mobile that bypass that option and can use ussd version 2 on the phone. Go to this link to download.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What Can USSD Do For Your Business? iTouch.co.zo" data-src="https://i2.wp.com/itouch.co.za/img/USSD.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: itouch.co.za</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It seems after running the ussd code, the pop up that returns is okay but if you try entering feedback or responding to it, lets say choose 1 for this or 2 for this it doesn&#039;t work, from my tinkering i have to wait until an argument is not recognized feedback then i can continue without hiccups. Then hold the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="U Mobile Ussd Code / All these codes are working and this is the simple" data-src="https://i2.wp.com/www.gooyait.com/uploads/ussd-codes.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fiveorangesd.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you just want to find out your last used downloaded app, then you can follow these steps: Ussd coded *#5005*7672# doesn&#039;t provide any feedback or information. Another banking innovation hit the financial world with the introduction of. Setting an smsc with **5005*7672*smscnumber# doesn&#039;t work either. Once your mobile phone has a mobile network, it will work just fine.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="USSD Codes List for all Network Operators 2017 WatchMeTech" data-src="https://i2.wp.com/www.watchmetech.com/wp-content/uploads/2017/03/USSD-Codes-List.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.watchmetech.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Now, what can i do with that main. Once your mobile phone has a mobile network, it will work just fine. This app can be found on your home screen, on the all apps screen, or, on simpler cell phones, on the lock screen. Hope it solves your problem. Now, let’s move ahead with the working of these codes.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="USSD Codes not working. — ZenTalk" data-src="https://i2.wp.com/us.v-cdn.net/6031231/uploads/128/DHNAKR18YOLQ.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: zentalk.asus.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Online banking has been made much easier with the introduction of ussd codes for online banking transactions on the go. Replied on january 21, 2015. However, ussd codes run on network level. Ussd code is not running. If you just want to find out your last used downloaded app, then you can follow these steps:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="USSD CODES / SHORT CODES Dialog Mobitel Hutch Airtel 23 May 2020 YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/wWWALjDEDYk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">We use cookies to give you the best possible experience on our website. But, you must understand that you haven&#039;t actually obtained those permissions just by declaring them in the manifest. Your phone connects to a mobile network and communicates with your telco’s computers. I.e for every 20seconds spent on the platform, you will be billed n2.50 from the credit.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="USSD Codes not working. — ZenTalk" data-src="https://i2.wp.com/us.v-cdn.net/6031231/uploads/991/GDVJA8V96Y4J.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: zentalk.asus.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Your telco’s computers process the request and send you back a response on the network. Just that airtime billing has been implemented on the gtbank 737 mobile banking service. But, you must understand that you haven&#039;t actually obtained those permissions just by declaring them in the manifest. When you type an mmi code on the dialer, it is further processed.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Transfer Money Using USSD Codes Based Mobile Banking" data-src="https://i2.wp.com/www.flashsaletricks.com/wp-content/uploads/2016/11/Cyf5d7rXAAAb9Tv.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.flashsaletricks.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">However, ussd codes run on network level. I have 500+ main balance in my bsnl sim. Using ussd codes is as simple as dialling a phone number. If you just want to find out your last used downloaded app, then you can follow these steps: Previously i activated data packs by dialing *444# but, it is not working now.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Run a USSD Code 8 Steps (with Pictures) wikiHow" data-src="https://i2.wp.com/www.wikihow.com/images/3/38/Run-a-USSD-Code-Step-8.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wikihow.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It works in a rather simple way: The uk csc no longer allows using the ussd codes. You simply need to dial the code, including any symbols such as * or #, using your phone&#039;s call functionality.once you dial these numbers, a popup message or menu will appear on your screen. I have 500+ main balance in my bsnl sim..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="(Solved) BSNL *444 USSD code is not working now DesiDime" data-src="https://i2.wp.com/cdn0.desidime.com/attachments/photos/602074/original/6436515_my_KLPD_Kuala_Lumpur_Police_Department_Screenshot_2020-01-06-09-59-37.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.desidime.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Then turn it back on. Guys, recently telecom operators are stopping the facility of activating plans or packs by using main balance. Why modem does not work with airtel 2g: Still running so after few seconds due to. Ussd code is not running.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-check-my-bank-balance-online-absa.html" class="be-post-title">
+				 <h6>how do i check my bank balance online absa </h6>
+                </a>
+                <a href="how-do-i-check-my-bank-balance-online-absa.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20check%20my%20bank%20balance%20online%20absa&amp;w=50&amp;h=50&amp;c=7" alt="how do i check my bank balance online absa">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-transfer-limit-for-zenith-bank-student-account.html" class="be-post-title">
+				 <h6>what is the transfer limit for zenith bank student account </h6>
+                </a>
+                <a href="what-is-the-transfer-limit-for-zenith-bank-student-account.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20transfer%20limit%20for%20zenith%20bank%20student%20account&amp;w=50&amp;h=50&amp;c=7" alt="what is the transfer limit for zenith bank student account">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-hdfc-credit-card-registered-address.html" class="be-post-title">
+				 <h6>how to check hdfc credit card registered address </h6>
+                </a>
+                <a href="how-to-check-hdfc-credit-card-registered-address.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20hdfc%20credit%20card%20registered%20address&amp;w=50&amp;h=50&amp;c=7" alt="how to check hdfc credit card registered address">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-send-cash-from-capitec-to-tymebank.html" class="be-post-title">
+				 <h6>how to send cash from capitec to tymebank </h6>
+                </a>
+                <a href="how-to-send-cash-from-capitec-to-tymebank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20send%20cash%20from%20capitec%20to%20tymebank&amp;w=50&amp;h=50&amp;c=7" alt="how to send cash from capitec to tymebank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="does-my-santander-account-have-an-iban-number.html" class="be-post-title">
+				 <h6>does my santander account have an iban number </h6>
+                </a>
+                <a href="does-my-santander-account-have-an-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=does%20my%20santander%20account%20have%20an%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="does my santander account have an iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-bic-and-iban-bank-of-ireland.html" class="be-post-title">
+				 <h6>how to find bic and iban bank of ireland </h6>
+                </a>
+                <a href="how-to-find-bic-and-iban-bank-of-ireland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20bic%20and%20iban%20bank%20of%20ireland&amp;w=50&amp;h=50&amp;c=7" alt="how to find bic and iban bank of ireland">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="check-bank-of-ireland-sort-code.html" class="be-post-title">
+				 <h6>check bank of ireland sort code </h6>
+                </a>
+                <a href="check-bank-of-ireland-sort-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=check%20bank%20of%20ireland%20sort%20code&amp;w=50&amp;h=50&amp;c=7" alt="check bank of ireland sort code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-iban-number-for-rbc.html" class="be-post-title">
+				 <h6>what is iban number for rbc </h6>
+                </a>
+                <a href="what-is-iban-number-for-rbc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20iban%20number%20for%20rbc&amp;w=50&amp;h=50&amp;c=7" alt="what is iban number for rbc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-find-my-aba-routing-number-hsbc.html" class="be-post-title">
+				 <h6>how do i find my aba routing number hsbc </h6>
+                </a>
+                <a href="how-do-i-find-my-aba-routing-number-hsbc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20find%20my%20aba%20routing%20number%20hsbc&amp;w=50&amp;h=50&amp;c=7" alt="how do i find my aba routing number hsbc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-my-uba-bank-number.html" class="be-post-title">
+				 <h6>how to check my uba bank number </h6>
+                </a>
+                <a href="how-to-check-my-uba-bank-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20my%20uba%20bank%20number&amp;w=50&amp;h=50&amp;c=7" alt="how to check my uba bank number">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

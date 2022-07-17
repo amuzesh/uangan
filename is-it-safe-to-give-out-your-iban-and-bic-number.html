@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Is It Safe To Give Out Your Iban And Bic Number at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "Is It Safe To Give Out Your Iban And Bic Number",
+  "datePublished": "2022-04-07T02:07:37Z",
+  "image": "https://tse1.mm.bing.net/th?q=is%20it%20safe%20to%20give%20out%20your%20iban%20and%20bic%20number",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=is%20it%20safe%20to%20give%20out%20your%20iban%20and%20bic%20number&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20it%20safe%20to%20give%20out%20your%20iban%20and%20bic%20number" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20it%20safe%20to%20give%20out%20your%20iban%20and%20bic%20number" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Is It Safe To Give Out Your Iban And Bic Number at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Is It Safe To Give Out Your Iban And Bic Number</h2>
+    <p><strong>Is It Safe To Give Out Your Iban And Bic Number</strong>. Avoid giving out your banking details to people you do not know or expect money from Generally, a hacker would need a combination of your date of birth, identity number, pin, full name, address, the full card number on the front of the card, its expiry date, and cvc number at the back;</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=is%20it%20safe%20to%20give%20out%20your%20iban%20and%20bic%20number" alt="Luxembourg Millenniumbcp" />
+        <br>
+        <figcaption>Luxembourg Millenniumbcp from ind.millenniumbcp.pt</figcaption>
+    </figure>
+        <p>
+        Bic should be on the line above your iban on your bank statement. Money transfer services in the uae | adcb an example of an iban code in at great britain&#039;s national westminster bank is gb 29 nwbk 601613 31926819. To receive a transfer, all you need to do is send your bic/iban so that the bank transfer can be made.
+    </p>
+    <h3>Luxembourg Millenniumbcp</h3>
+    <p>Giving out your account number and sort code is often necessary, for example, to receive payments from your employer, friends, family, customers or clients. Even here in ireland all companies display their bank details on their invoice. This is the only way people can transfer money to you. The main difference between an iban and swift bic code lies in what they’re used to identify.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Other Countries Millenniumbcp" data-src="https://i2.wp.com/ind.millenniumbcp.pt/en/Particulares/solutions/PublishingImages/REx_OutrosPaises_top_150630.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ind.millenniumbcp.pt</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can&#039;t draw from someone&#039;s account on the basis of an iban. At least in the uk an iban is just your domestic sort code/account number with the digits smashed together and a prefix added. In most european countries it&#039;s actually normal for businesses to have their full bank details made public on websites. Fraud can occur in two ways:.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Luxembourg Millenniumbcp" data-src="https://i2.wp.com/ind.millenniumbcp.pt/en/Particulares/solutions/PublishingImages/REx_LU_top_150630.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ind.millenniumbcp.pt</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Now let’s look at the risks of disclosing your iban. The iban is also a construct made up of the 4 letter bank core swift id, sort code and account number (with an additional check digit). I usually add around €0.25 to cover exchange rate fluctuations. Making payments quote the iban you&#039;re given in the beneficiary account number field of.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BACS (Bank Transfer) Docs" data-src="https://i2.wp.com/docs.woocommerce.com/wp-content/uploads/2012/01/WooCommerce-BACS-Settings.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: docs.woocommerce.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">People can deposit money there without your approval, but they can never withdraw anything. On contrast, in (continental) europe, giving the account and bank number (iban and bic) is a (the most) common way to enable someone to send money to you. Fraud can occur in two ways: I belive other countries are similar. So is it safe to give.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="France Millenniumbcp" data-src="https://i2.wp.com/ind.millenniumbcp.pt/en/Particulares/solutions/PublishingImages/REx_FR_top_150630.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ind.millenniumbcp.pt</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can&#039;t draw from someone&#039;s account on the basis of an iban. I belive other countries are similar. Generally, a hacker would need a combination of your date of birth, identity number, pin, full name, address, the full card number on the front of the card, its expiry date, and cvc number at the back; At first glance, an iban.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Finder Iban" data-src="https://i2.wp.com/dym.elfilo.veneto.it/image.php?src=https://i2.wp.com/picsum.photos/600/300" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: dym.elfilo.veneto.it</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Therefore, we also explored this topic from a sc. Is it safe to give out your iban code? It’s generally considered safe to give out your account number and sort code, but you should always use common sense and avoid sharing your bank details with people you don’t know or expect payments from. Even with authorization the payment can be.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BACS (Bank Transfer) Docs" data-src="https://i2.wp.com/docs.woocommerce.com/wp-content/uploads/2012/01/WooCommerce-BACS-Settings.png?w=950" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: docs.woocommerce.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Iban gb15hbuk40127612345678) and the bic may be prefaced with &#039;bic&#039; (eg. In most european countries it&#039;s actually normal for businesses to have their full bank details made public on websites. On contrast, in (continental) europe, giving the account and bank number (iban and bic) is a (the most) common way to enable someone to send money to you. At least.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Vendor Payments Make WordPress Communities" data-src="https://i2.wp.com/make.wordpress.org/community/files/2015/06/Screen-Shot-2015-06-30-at-4.04.06-PM.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: make.wordpress.org</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The main difference between an iban and swift bic code lies in what they’re used to identify. Only the bic, iban and account name are actually need in order to set up a transfer but some banks also request additional information like the bank name and/or address. Avoid giving out your banking details to people you do not know or.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="United Kingdom Millenniumbcp" data-src="https://i2.wp.com/ind.millenniumbcp.pt/en/Particulares/solutions/PublishingImages/REx_UK_top_150630.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ind.millenniumbcp.pt</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Swift is no party to this issue and this is all about banking. How secure fb messaging is i couldn&#039;t say, but i doubt if it&#039;s any less secure than any other means of communication other than a face to face. Is it safe to give out your iban code? The only way that it can be used to take.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Terrexa Review Is it a Safe Exchange? What You Need to Know" data-src="https://i2.wp.com/mk0coinbureauisacqs2.kinstacdn.com/wp-content/uploads/2018/10/sellBTCTerrexa.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.coinbureau.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Is it safe to give iban number in uae what are the advantages and disadvantages of intensive farming » california connections academy salary » is it safe to give iban number in uae » posted by on mar 19, 2022 in what is technology transfer in agriculture |. Is it safe to give out your iban code? So is it.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What are IBAN numbers? Quora" data-src="https://i2.wp.com/qph.fs.quoracdn.net/main-qimg-70e49ae69bf17979333eee4b2bda2ad2" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.quora.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Unfortunately in the uk given someones sort code and account number it is possible to attempt to set up a fraudulent direct debit. In terms of security it is perfectly safe to give out your bic/iban. I usually add around €0.25 to cover exchange rate fluctuations. It&#039;s your account number written in a standard global format. Basically, a swift number.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-s-the-sort-code-and-account-number.html" class="be-post-title">
+				 <h6>where&#039;s the sort code and account number </h6>
+                </a>
+                <a href="where-s-the-sort-code-and-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%27s%20the%20sort%20code%20and%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="where&amp;#039;s the sort code and account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-find-my-bank-of-america-iban-number.html" class="be-post-title">
+				 <h6>how do i find my bank of america iban number </h6>
+                </a>
+                <a href="how-do-i-find-my-bank-of-america-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20find%20my%20bank%20of%20america%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="how do i find my bank of america iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-find-my-iban-number-bank-of-scotland.html" class="be-post-title">
+				 <h6>how do i find my iban number bank of scotland </h6>
+                </a>
+                <a href="how-do-i-find-my-iban-number-bank-of-scotland.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20find%20my%20iban%20number%20bank%20of%20scotland&amp;w=50&amp;h=50&amp;c=7" alt="how do i find my iban number bank of scotland">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="prepaid-debit-card-with-sort-code-and-account-number.html" class="be-post-title">
+				 <h6>prepaid debit card with sort code and account number </h6>
+                </a>
+                <a href="prepaid-debit-card-with-sort-code-and-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=prepaid%20debit%20card%20with%20sort%20code%20and%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="prepaid debit card with sort code and account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-do-i-find-my-international-bank-account-number.html" class="be-post-title">
+				 <h6>where do i find my international bank account number </h6>
+                </a>
+                <a href="where-do-i-find-my-international-bank-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%20do%20i%20find%20my%20international%20bank%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="where do i find my international bank account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-view-card-number-on-bank-app.html" class="be-post-title">
+				 <h6>how to view card number on bank app </h6>
+                </a>
+                <a href="how-to-view-card-number-on-bank-app.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20view%20card%20number%20on%20bank%20app&amp;w=50&amp;h=50&amp;c=7" alt="how to view card number on bank app">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-my-bic-number-lloyds.html" class="be-post-title">
+				 <h6>what is my bic number lloyds </h6>
+                </a>
+                <a href="what-is-my-bic-number-lloyds.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20my%20bic%20number%20lloyds&amp;w=50&amp;h=50&amp;c=7" alt="what is my bic number lloyds">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-my-bic-code-uk.html" class="be-post-title">
+				 <h6>what is my bic code uk </h6>
+                </a>
+                <a href="what-is-my-bic-code-uk.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20my%20bic%20code%20uk&amp;w=50&amp;h=50&amp;c=7" alt="what is my bic code uk">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-find-out-my-swift-code-hsbc.html" class="be-post-title">
+				 <h6>how do i find out my swift code hsbc </h6>
+                </a>
+                <a href="how-do-i-find-out-my-swift-code-hsbc.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20find%20out%20my%20swift%20code%20hsbc&amp;w=50&amp;h=50&amp;c=7" alt="how do i find out my swift code hsbc">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-your-swift-code-halifax.html" class="be-post-title">
+				 <h6>how to find your swift code halifax </h6>
+                </a>
+                <a href="how-to-find-your-swift-code-halifax.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20your%20swift%20code%20halifax&amp;w=50&amp;h=50&amp;c=7" alt="how to find your swift code halifax">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

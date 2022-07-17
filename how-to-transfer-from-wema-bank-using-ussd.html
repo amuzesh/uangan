@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        How To Transfer From Wema Bank Using Ussd at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "How To Transfer From Wema Bank Using Ussd",
+  "datePublished": "2022-03-18T22:49:04Z",
+  "image": "https://tse1.mm.bing.net/th?q=how%20to%20transfer%20from%20wema%20bank%20using%20ussd",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=how%20to%20transfer%20from%20wema%20bank%20using%20ussd&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20from%20wema%20bank%20using%20ussd" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20from%20wema%20bank%20using%20ussd" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            How To Transfer From Wema Bank Using Ussd at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">How To Transfer From Wema Bank Using Ussd</h2>
+    <p><strong>How To Transfer From Wema Bank Using Ussd</strong>. The code is incredibly fast and allows you to complete transactions in a matter of seconds. Hope with this, you have learnt how to carry out remita payment from wema bank account using ussd with any phone.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20from%20wema%20bank%20using%20ussd" alt="*945 USSD How to Activate WEMA Bank Transfer Code Informate Nigeria" />
+        <br>
+        <figcaption>*945 USSD How to Activate WEMA Bank Transfer Code Informate Nigeria from informate.ng</figcaption>
+    </figure>
+        <p>
+        Refresh your phone dialer and insert the ussd code again *945# and send. Here are the steps required to check your account balance at any atm using your debit card. Banking made easy with *945# *945# ussd codes account management codes;
+    </p>
+    <h3>*945 USSD How to Activate WEMA Bank Transfer Code Informate Nigeria</h3>
+    <p>Dial *945*nuban account number*amount# (for example, *945*1234567890*5000#, to transfer 5,000 naira to 1234567890 on the mobile phone number you used to open your wema bank account. 2.reply with the option “0” to register for the wema ussd banking. Dial *945*beneficiary account number*amount# (e.g. To transfer money via alat by wema bank simply dial 945*beneficiaryaccountnumber*amount# buy airtime:</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Activate Wema Bank Nigeria USSD Transfer Code Ultimate" data-src="https://i2.wp.com/thetransfercode.com/wp-content/uploads/2020/08/Wema-Bank-Nigeria-USSD-Code-680x350.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thetransfercode.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">All you need are some transfer codes. Enter your wema bank account number or. Dial *945*9*rrr#, (for example, *945*9*01234567890987654320# then follow other instructions made available to you. Wema bank money transfer via ussd is effortless with any mobile phone. Wema bank transfer code 2021 &amp; transfer code for wema bank read more »</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wema Bank ussd Code to transfer money , Check Account Balance &amp; others" data-src="https://i.pinimg.com/originals/fc/c2/3b/fcc23b0e797a6ebfb931b7d21870725e.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is easy, fast, and reliable. Transfer money to kuda bank account from wema bank with kuda bank ussd code. Transfer money to other wema bank: How to carry out remita payment from wema account using ussd. Dial *945*000# using the phone number linked to your account.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wema Bank Mobile Money Transfer Code How To Transfer Money With USSD" data-src="https://i2.wp.com/techreen.com/wp-content/uploads/2019/02/Wema2real-768x384.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: techreen.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The *945# is wema bank’s unique transfer code. This code, however, is not for transferring money. Best of all, it works on any kind of mobile phone. All you need are some transfer codes. There are two ways to carry out a money transfer using the wema bank ussd code.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Register Wema Bank Nigeria USSD Transfer Code Follow These Steps" data-src="https://i2.wp.com/thetransfercode.com/wp-content/uploads/2020/08/How-To-Register-Wema-Bank-USSD-Transfer-Code-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thetransfercode.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Wema bank money transfer via ussd is effortless with any mobile phone. Now reply with “3” to select “transfer money”. How to send money using wema bank transfer code. Airtime, data, and transfers codes; Dial *945# and follow on screen prompts.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="WEMA Bank Recharge Code How To Buy Airtime With WEMA USSD Code" data-src="https://i2.wp.com/thetransfercode.com/wp-content/uploads/2021/05/WEMA-Bank-Recharge-Code.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thetransfercode.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Hope with this, you have learnt how to carry out remita payment from wema bank account using ussd with any phone. To transfer money via alat by wema bank simply dial 945*beneficiaryaccountnumber*amount# buy airtime: Enter your wema bank account number or. How to send money using wema bank transfer code. Dial *945*account number* amount# follow screen prompts;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="*945 USSD How to Activate WEMA Bank Transfer Code Informate Nigeria" data-src="https://i2.wp.com/informate.ng/wp-content/uploads/2021/05/Wema-New-1-1024x576.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: informate.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Ussd code is short for (unstructured supplementary service data) and ever since the advent of ussd, mobile phones now give the. Kindly follow the steps below; With the wema bank ussd code, you can easily transfer money to and from your wema bank account without having to go to a physical bank branch. Transfer money to other wema bank: Confirm.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Code for Wema Bank Funds Transfer BukasBlog" data-src="https://i2.wp.com/4.bp.blogspot.com/-yjDKXPGN1TU/WQ87D7_H7AI/AAAAAAAAFD0/6uA8lNiAQOIg0tc4mWUxT4YDMDMIayltgCLcB/s1600/wema%2Bbank%2Bussd%2Bcode.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.bukasblog.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Transferring funds from wema bank to other banks will attract a fee of 52.50. This service is open to mtn, glo, 9mobile, and airtel subscribers. Benefits of using wema’s ussd banking. How to send money using wema bank transfer code. Enter the pin associated with the card.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FREE ₦₦₦ ️Wema Bank Transfer Code 2021 How To Send Money &amp; Airtime" data-src="https://i2.wp.com/www.theinfoguiders.com/wp-content/uploads/2019/06/Wema-Bank-Transfer-Code-1-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.theinfoguiders.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is the code you’ll always dial on your cellphone whenever you need to make ussd transactions with your wema bank account. Wema bank transfer code to send money. Dial *945*9*rrr#, (for example, *945*9*01234567890987654320# then follow other instructions made available to you. Dial *945# and follow on screen prompts. To transfer money the easy way, dial *945*account number*amount# if it’s.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Wema Bank Transfer Code Mobile USSD Code Payments Free Mobile" data-src="https://i2.wp.com/www.hitsbase.com/wp-content/uploads/2018/12/Wema-Bank-Transfer-Code22.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.hitsbase.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is a ussd codes for sending money, buying airtime and data, paying bills, and even making payments on pos terminals without a wema/alat card. How to carry out remita payment from wema account using ussd. Things to know about wema bank ussd transfer code. The ussd code is only open to wema bank account holders. Transfer money to kuda.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to use Wema Bank USSD code Howtos.ng" data-src="https://i0.wp.com/howtos.ng/wp-content/uploads/2020/05/74F9F4FD-52A8-4E72-8779-ABFB67BE5545.jpeg?resize=600%2C300&amp;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: howtos.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Using transfer code is nothing new. Here are the steps required to check your account balance at any atm using your debit card. You will select the bank type and enter your pin for the transfer to be authenticated with the pin of your ussd transaction. Transferring funds from wema bank to other banks will attract a fee of 52.50..</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="meaning-of-international-bank-account.html" class="be-post-title">
+				 <h6>meaning of international bank account </h6>
+                </a>
+                <a href="meaning-of-international-bank-account.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=meaning%20of%20international%20bank%20account&amp;w=50&amp;h=50&amp;c=7" alt="meaning of international bank account">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-chase-bank-swift-code.html" class="be-post-title">
+				 <h6>what is the chase bank swift code </h6>
+                </a>
+                <a href="what-is-the-chase-bank-swift-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20chase%20bank%20swift%20code&amp;w=50&amp;h=50&amp;c=7" alt="what is the chase bank swift code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ussd-transfer-code-for-stanbic-ibtc-bank.html" class="be-post-title">
+				 <h6>ussd transfer code for stanbic ibtc bank </h6>
+                </a>
+                <a href="ussd-transfer-code-for-stanbic-ibtc-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ussd%20transfer%20code%20for%20stanbic%20ibtc%20bank&amp;w=50&amp;h=50&amp;c=7" alt="ussd transfer code for stanbic ibtc bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-verify-my-visa-debit-card.html" class="be-post-title">
+				 <h6>how do i verify my visa debit card </h6>
+                </a>
+                <a href="how-do-i-verify-my-visa-debit-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20verify%20my%20visa%20debit%20card&amp;w=50&amp;h=50&amp;c=7" alt="how do i verify my visa debit card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="ussd-code-for-access-bank-nigeria.html" class="be-post-title">
+				 <h6>ussd code for access bank nigeria </h6>
+                </a>
+                <a href="ussd-code-for-access-bank-nigeria.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=ussd%20code%20for%20access%20bank%20nigeria&amp;w=50&amp;h=50&amp;c=7" alt="ussd code for access bank nigeria">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-a-iban-number-lloyds.html" class="be-post-title">
+				 <h6>what is a iban number lloyds </h6>
+                </a>
+                <a href="what-is-a-iban-number-lloyds.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20a%20iban%20number%20lloyds&amp;w=50&amp;h=50&amp;c=7" alt="what is a iban number lloyds">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-hdfc-credit-balance.html" class="be-post-title">
+				 <h6>how to check hdfc credit balance </h6>
+                </a>
+                <a href="how-to-check-hdfc-credit-balance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20hdfc%20credit%20balance&amp;w=50&amp;h=50&amp;c=7" alt="how to check hdfc credit balance">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-iban-international-bank-account-number.html" class="be-post-title">
+				 <h6>what is iban international bank account number </h6>
+                </a>
+                <a href="what-is-iban-international-bank-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20iban%20international%20bank%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="what is iban international bank account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-is-swift-code-on-debit-card.html" class="be-post-title">
+				 <h6>where is swift code on debit card </h6>
+                </a>
+                <a href="where-is-swift-code-on-debit-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%20is%20swift%20code%20on%20debit%20card&amp;w=50&amp;h=50&amp;c=7" alt="where is swift code on debit card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-account-number-in-bank-of-america.html" class="be-post-title">
+				 <h6>what is account number in bank of america </h6>
+                </a>
+                <a href="what-is-account-number-in-bank-of-america.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20account%20number%20in%20bank%20of%20america&amp;w=50&amp;h=50&amp;c=7" alt="what is account number in bank of america">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

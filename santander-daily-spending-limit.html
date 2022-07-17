@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Santander Daily Spending Limit at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "Santander Daily Spending Limit",
+  "datePublished": "2022-06-17T14:20:39Z",
+  "image": "https://tse1.mm.bing.net/th?q=santander%20daily%20spending%20limit",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=santander%20daily%20spending%20limit&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=santander%20daily%20spending%20limit" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=santander%20daily%20spending%20limit" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Santander Daily Spending Limit at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Santander Daily Spending Limit</h2>
+    <p><strong>Santander Daily Spending Limit</strong>. Personal accounts have a daily online transfer limit of £25,000 while business accounts have a £100,000 limit. The maximum amount you can make in payments in 24 hours is £100,000.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=santander%20daily%20spending%20limit" alt="Monzo Review May 2020" />
+        <br>
+        <figcaption>Monzo Review May 2020 from debitcardguru.com</figcaption>
+    </figure>
+        <p>
+        The move by the lender is to protect its customers’ accounts from fraud. Pay with your mobile at any contactless pos. If your recipient also has a borderless account, it&#039;s free.
+    </p>
+    <h3>Monzo Review May 2020</h3>
+    <p>With your debit cards you can withdraw cash free of charge at more than 7,000 atms of the santander spain network. Some debit cards have spending capped at $1,000, $2,000, or $3,000 daily. I&#039;ve just checked and it would seem i have been able to pay just over £66,000 in one day to the same account via faster payments split over multiple transactions. 0800 670 620 (+44 1512 648 725 if you&#039;re outside the uk)⁷.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Chezmaitaipearls La Liga Time Table Today" data-src="https://i2.wp.com/i.ytimg.com/vi/qoQfDVNUFtw/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: chezmaitaipearls.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you want to withdraw more than that by. One other note, i was told once by santander when questioning a declined transaction is there. Make payments, transfer money and pay your bills with ease. $3,000 purchase limit on the chase debit card. 2 no monthly fee for santander ® money market savings with any personal santander checking account or.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="The limits of regulatory compliance of ICOs The Cryptonomist" data-src="https://i2.wp.com/cryptonomist.ch/wp-content/uploads/2018/11/Senza-titolo-e1542709812711.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: cryptonomist.ch</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Santander is also another bank that imposes a $500 daily limit,. If you want to withdraw more than that by. Here&#039;s what&#039;s changing on the santander 123 account from 5 may 2020: We limit withdrawals and transfers out of your savings and money market savings accounts. Pay with your mobile at any contactless pos.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="" data-src="https://i2.wp.com/venturebeat.com/wp-content/uploads/2018/06/ZipRecruiter-Employer-Candidate-Calibration.png?w=800" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: venturebeat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It is easy to pay from your checking account using a debit card. For example, citibank’s regular checking account has a $1,000 daily withdrawal limit and $5,000 daily debit card payment limit. Lloyds bank, halifax and bank of scotland announced in september 2021 that they would start allowing customers to their own contactless spending limits after the uk increase in.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Debit Card For 13 Year Old / Greenlight Card Review 2021 Finder Com" data-src="https://i2.wp.com/www.pebank.com/assets/files/hz8txfeA/Debit Card Information Dates for Website_07312020.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sheezafreebird.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The contactless card payment limit rose from £45 to £100 on 15 october. Payments generally arrive at their destination immediately after leaving your account, but in some cases, they can last until the end of the. £300 limit could equally apply to the total of all payees however. 1 no monthly fee for santander ® savings with any personal santander.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contactless card crooks are cashing in thanks to &#039;double tap&#039; trick" data-src="https://i2.wp.com/i.dailymail.co.uk/1s/2019/10/05/08/19319244-7539837-A_shopping_exercise_by_the_Daily_Mail_discovered_just_how_easy_i-a-1_1570260772534.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dailymail.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This is almost as much as the maximum amount that banks can legally charge in the uk. 0800 670 620 (+44 1512 648 725 if you&#039;re outside the uk)⁷. Interest will drop from 1.5% aer to 1% aer. Santander bank has reduced the daily limits on credit and debit card spending and withdrawals to protect customers who were affected with.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to ensure your funds add up as student fees soar Daily Mail Online" data-src="https://i2.wp.com/i.dailymail.co.uk/i/pix/2017/09/02/17/43D0787800000578-4846852-image-a-35_1504368733052.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dailymail.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">(that&#039;s the next thing i&#039;m going to check) *i was able to pay out 2 x £250 in a day previously because payments were sent from two different accounts (one &#039;santander&#039; one &#039;a&amp;l. You can make single payments in mobile and online banking of up to £25,000 from your current account for free. But bank of scotland, danske bank uk,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="" data-src="https://i2.wp.com/venturebeat.com/wp-content/uploads/2018/06/grow-scrn-2.jpg?w=800" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: venturebeat.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Spending limit on santander debit card uk. 0800 670 620 (+44 1512 648 725 if you&#039;re outside the uk)⁷. Santander&#039;s premier plus checking account holders have the same atm withdrawal limit of $2,500 but have an increased daily debit purchase limit of $11,500. The limit, which can be increased in £5 increments, can be amended via online chat accessed either.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Contactless payments The pros and cons of tap and pay Finder UK" data-src="https://i2.wp.com/dvh1deh6tagwk.cloudfront.net/finder-us/wp-uploads/sites/3/2018/09/contactless_card_payment_in_cafe_738_410.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.finder.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Payments usually arrive at the destination as soon as they leave your account, but sometimes they can. Updated 2 december 2021 | created 28 september 2021. The individual transfer limit is £25k, yes, you can send multiple transactions per day. Spending limit on santander debit card uk. Find out more about santander international payments.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Monzo Review May 2020" data-src="https://i1.wp.com/debitcardguru.com/wp-content/uploads/2018/12/Monzo-Card-1.jpg?resize=600%2C450" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: debitcardguru.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Others take a different view. These limits prevent thieves from withdrawing and spending all your money. Santander uk has announced that customers with either a mastercard debit or credit card will now be able to set a lower limit for contactless transactions, ranging from £5 to £95. The lower of the amount in your account or the amount of cash.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Cashback How to get £1,000 richer without spending an extra penny" data-src="https://i2.wp.com/i.dailymail.co.uk/i/pix/2014/01/08/article-2535429-1A7DB4C100000578-543_634x366.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.dailymail.co.uk</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Santander credit cards 24/7 contact number: On help &amp; services, navigate to “service request by category” and under “card management” select “change daily limit for debit / atm / credit card”. I&#039;ve just checked and it would seem i have been able to pay just over £66,000 in one day to the same account via faster payments split over multiple.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-my-security-bank-credit-card-balance.html" class="be-post-title">
+				 <h6>how to check my security bank credit card balance </h6>
+                </a>
+                <a href="how-to-check-my-security-bank-credit-card-balance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20my%20security%20bank%20credit%20card%20balance&amp;w=50&amp;h=50&amp;c=7" alt="how to check my security bank credit card balance">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="can-i-view-my-santander-pin-online.html" class="be-post-title">
+				 <h6>can i view my santander pin online </h6>
+                </a>
+                <a href="can-i-view-my-santander-pin-online.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=can%20i%20view%20my%20santander%20pin%20online&amp;w=50&amp;h=50&amp;c=7" alt="can i view my santander pin online">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="can-i-find-my-cvv-number-online.html" class="be-post-title">
+				 <h6>can i find my cvv number online </h6>
+                </a>
+                <a href="can-i-find-my-cvv-number-online.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=can%20i%20find%20my%20cvv%20number%20online&amp;w=50&amp;h=50&amp;c=7" alt="can i find my cvv number online">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-my-credit-card-balance-online-security-bank.html" class="be-post-title">
+				 <h6>how to check my credit card balance online security bank </h6>
+                </a>
+                <a href="how-to-check-my-credit-card-balance-online-security-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20my%20credit%20card%20balance%20online%20security%20bank&amp;w=50&amp;h=50&amp;c=7" alt="how to check my credit card balance online security bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-cashback-in-amazon-icici-credit-card.html" class="be-post-title">
+				 <h6>how to check cashback in amazon icici credit card </h6>
+                </a>
+                <a href="how-to-check-cashback-in-amazon-icici-credit-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20cashback%20in%20amazon%20icici%20credit%20card&amp;w=50&amp;h=50&amp;c=7" alt="how to check cashback in amazon icici credit card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-bank-iban-number.html" class="be-post-title">
+				 <h6>how to get bank iban number </h6>
+                </a>
+                <a href="how-to-get-bank-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20bank%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="how to get bank iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-sbi-credit-card-delivery-status.html" class="be-post-title">
+				 <h6>how to check sbi credit card delivery status </h6>
+                </a>
+                <a href="how-to-check-sbi-credit-card-delivery-status.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20sbi%20credit%20card%20delivery%20status&amp;w=50&amp;h=50&amp;c=7" alt="how to check sbi credit card delivery status">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-transfer-money-using-stanbic-ussd-code.html" class="be-post-title">
+				 <h6>how to transfer money using stanbic ussd code </h6>
+                </a>
+                <a href="how-to-transfer-money-using-stanbic-ussd-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20money%20using%20stanbic%20ussd%20code&amp;w=50&amp;h=50&amp;c=7" alt="how to transfer money using stanbic ussd code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-hdfc-credit-card-balance-through-call.html" class="be-post-title">
+				 <h6>how to check hdfc credit card balance through call </h6>
+                </a>
+                <a href="how-to-check-hdfc-credit-card-balance-through-call.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20hdfc%20credit%20card%20balance%20through%20call&amp;w=50&amp;h=50&amp;c=7" alt="how to check hdfc credit card balance through call">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-monitor-credit-card-spending-bdo.html" class="be-post-title">
+				 <h6>how to monitor credit card spending bdo </h6>
+                </a>
+                <a href="how-to-monitor-credit-card-spending-bdo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20monitor%20credit%20card%20spending%20bdo&amp;w=50&amp;h=50&amp;c=7" alt="how to monitor credit card spending bdo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

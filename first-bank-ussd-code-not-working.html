@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        First Bank Ussd Code Not Working at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "First Bank Ussd Code Not Working",
+  "datePublished": "2022-04-10T04:38:39Z",
+  "image": "https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20not%20working",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20not%20working&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20not%20working" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20not%20working" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            First Bank Ussd Code Not Working at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">First Bank Ussd Code Not Working</h2>
+    <p><strong>First Bank Ussd Code Not Working</strong>. The first is to check your balance on your airtime the other will tell you what the cost of the last mobile phone call cost you. You can also use the ussd code to check your real time first bank account balance.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20not%20working" alt="How Does FNB Bank Your Change Work First National Bank South Africa" />
+        <br>
+        <figcaption>How Does FNB Bank Your Change Work First National Bank South Africa from thetransfercode.com</figcaption>
+    </figure>
+        <p>
+        I try to do it but it not working. Reply samson december 24, 2017 at 4:59 am The first is to check your balance on your airtime the other will tell you what the cost of the last mobile phone call cost you.
+    </p>
+    <h3>How Does FNB Bank Your Change Work First National Bank South Africa</h3>
+    <p>How to use the first bank transfer code. Sometimes, it’s easier to enter a ussd code whenever you need to transfer money. Status indicator for activated ultracards. Set active sim card for sms reception.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="MCoop Cash And Ussd Not Working? Try The New Coop Online Service" data-src="https://i2.wp.com/konvigilante.com/wp-content/uploads/2021/03/co-op-online-screenshot9-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: konvigilante.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To use your first bank ussd code for money transfers, follow these easy steps. It works in a rather simple way: The first is to check your balance on your airtime the other will tell you what the cost of the last mobile phone call cost you. Why is my zenith bank ussd code not working? When dialed, two options.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="7 FAST WAYS TO BUY BULK SMS (USSD CODES FOR ALL BANKS) How to Send" data-src="http://i0.wp.com/blog.multitexter.com/wp-content/uploads/2017/05/multitexter-firstbank-ussd-transfer-code-bulk-sms.jpg?resize=1000%2C1000" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: blog.multitexter.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You may also visit the. If you just opened a first bank account or an existing customer yet to subscribe for the ussd option, here comes an opportunity for you to change the narrative by simply learning. To check your first bank account balance, dial *894*00#. This code initiates first bank magic banking on your phone. Now let’s go into.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="First Bank Nigeria Transfer Code Activation How To Activate First" data-src="https://i2.wp.com/embassycare.com/wp-content/uploads/2021/07/First-Bank-Nigeria-Transfer-Code.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: embassycare.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To check your first bank account balance. When dialed, two options are displayed for the customer to choose from: First bank transfer code &amp; new first bank ussd code 2021. It works in a rather simple way: Now let’s go into how to use the first bank transfer code.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="First Bank Transfer Code Transfer Money With *894 On FirstBank Nigeria" data-src="https://i2.wp.com/1.bp.blogspot.com/-HbkLthcOuDo/Xd7IS1CXU2I/AAAAAAAACRs/eBgCpJTb-ug_Ia8RrVnGYBn6c6GF6HzDACLcBGAsYHQ/s1600/FB894.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.kellymarketingcpa.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Here are the steps required to set up a first bank transfer code if you already have a first bank account and a debit card. Dial 565 0# to reach glo. How do i register my ussd code? Now let’s go into how to use the first bank transfer code. First bank transfer code &amp; new first bank ussd code.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best Bulk SMS Service in Nigeria How to use First Bank USSD for Transfer" data-src="https://i2.wp.com/www.ebulksms.com/webroot/files/uploads/posts/untitled design.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.ebulksms.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">A message will display showing your account balance. The first is to check your balance on your airtime the other will tell you what the cost of the last mobile phone call cost you. Dial *894*0# with the phone number linked to your first bank account. In the process of dialing the ussd code, press enter. For bank account balance.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How Does FNB Bank Your Change Work First National Bank South Africa" data-src="https://i2.wp.com/thetransfercode.com/wp-content/uploads/2021/06/How-Does-FNB-Bank-Your-Change-Work.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: thetransfercode.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To use your first bank ussd code for money transfers, follow these easy steps. First bank transfer code &amp; new first bank ussd code 2021. Just follow the below step by step guides on how to register for first bank ussd quick banking service: Dial 565 0# for 9mobile (etisalat). To transfer money from your first bank account to another.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Register Unity Bank Nigeria USSD Transfer Code asquestions" data-src="https://i2.wp.com/cdn-bfehk.nitrocdn.com/KgPwocTEAmgExXNsNxzalsiSaayZWJcw/assets/static/optimized/wp-content/uploads/2020/12/a11955933d1fbb77fff8c35a2c4bb883.How-To-Register-Unity-Bank-Nigeria-USSD-Transfer-Code-629x420.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: asquestions.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You should always have your account. Just follow the below step by step guides on how to register for first bank ussd quick banking service: Another way to deactivate your first bank ussd code is to contact the first bank. Your account number, account balance, last transaction, all can be done with first bank ussd code, the code is *894#,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="First Bank App Not Working First Commonwealth Bank Mobile App Guide" data-src="https://i2.wp.com/i.ytimg.com/vi/RGwcxrLPgMk/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: respiredenovo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The first table is the ussd codes which you would use the most. Make sure to confirm the amount you are transferring, and then send. You will select the bank type and enter your pin for the transfer to be authenticated. I try to do it but it not working. Your number will be registered on the first bank ussd.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="First Bank App Not Working First Commonwealth Bank Mobile App Guide" data-src="https://i2.wp.com/pbs.twimg.com/media/EoOAI0LXcAAs1tk.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: respiredenovo.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You initiate the ussd session by dialing a special set of code with the format *xyz#. Enter your pin and press the send button. Status indicator for activated ultracards. Please i want to use 894 to pay free tv bill on my phone but i was asked to provide pass code. After dialing the code, follow the instructions till the.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FirstBank USSD Code for All Transactions" data-src="https://i2.wp.com/1.bp.blogspot.com/-CdabKCmd4cA/WhHQPDteCkI/AAAAAAAADBI/opbR5ce1LwMVHQ9Lwx_fORAJNYhiH0pOACLcBGAs/s1600/how%2Bto%2Btransfer%2Bmoney%2Bfrom%2BFirstBank%2Bto%2Bother%2Bbanks.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wazobiawap.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you just opened a first bank account or an existing customer yet to subscribe for the ussd option, here comes an opportunity for you to change the narrative by simply learning. How can i fund sporty bet acct with ussd code ,with first bank. Dial *894* amount * account number #. Just follow the below step by step guides.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-maximum-payment-on-a-natwest-debit-card.html" class="be-post-title">
+				 <h6>what is the maximum payment on a natwest debit card </h6>
+                </a>
+                <a href="what-is-the-maximum-payment-on-a-natwest-debit-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20maximum%20payment%20on%20a%20natwest%20debit%20card&amp;w=50&amp;h=50&amp;c=7" alt="what is the maximum payment on a natwest debit card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-an-iban-number-an-account-number.html" class="be-post-title">
+				 <h6>is an iban number an account number </h6>
+                </a>
+                <a href="is-an-iban-number-an-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20an%20iban%20number%20an%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="is an iban number an account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-bsb-and-account-number-anz.html" class="be-post-title">
+				 <h6>how to get bsb and account number anz </h6>
+                </a>
+                <a href="how-to-get-bsb-and-account-number-anz.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20bsb%20and%20account%20number%20anz&amp;w=50&amp;h=50&amp;c=7" alt="how to get bsb and account number anz">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="short-code-for-union-bank-mobile-transfer.html" class="be-post-title">
+				 <h6>short code for union bank mobile transfer </h6>
+                </a>
+                <a href="short-code-for-union-bank-mobile-transfer.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=short%20code%20for%20union%20bank%20mobile%20transfer&amp;w=50&amp;h=50&amp;c=7" alt="short code for union bank mobile transfer">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="first-bank-ussd-code-for-gotv-subscription.html" class="be-post-title">
+				 <h6>first bank ussd code for gotv subscription </h6>
+                </a>
+                <a href="first-bank-ussd-code-for-gotv-subscription.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=first%20bank%20ussd%20code%20for%20gotv%20subscription&amp;w=50&amp;h=50&amp;c=7" alt="first bank ussd code for gotv subscription">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-check-the-balance-on-my-virtual-visa-card.html" class="be-post-title">
+				 <h6>how do i check the balance on my virtual visa card </h6>
+                </a>
+                <a href="how-do-i-check-the-balance-on-my-virtual-visa-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20check%20the%20balance%20on%20my%20virtual%20visa%20card&amp;w=50&amp;h=50&amp;c=7" alt="how do i check the balance on my virtual visa card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-ussd-code-for-wema-bank.html" class="be-post-title">
+				 <h6>what is the ussd code for wema bank </h6>
+                </a>
+                <a href="what-is-the-ussd-code-for-wema-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20ussd%20code%20for%20wema%20bank&amp;w=50&amp;h=50&amp;c=7" alt="what is the ussd code for wema bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-kcb-bank-code.html" class="be-post-title">
+				 <h6>what is the kcb bank code </h6>
+                </a>
+                <a href="what-is-the-kcb-bank-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20kcb%20bank%20code&amp;w=50&amp;h=50&amp;c=7" alt="what is the kcb bank code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-citibank-credit-card-balance-through-sms.html" class="be-post-title">
+				 <h6>how to check citibank credit card balance through sms </h6>
+                </a>
+                <a href="how-to-check-citibank-credit-card-balance-through-sms.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20citibank%20credit%20card%20balance%20through%20sms&amp;w=50&amp;h=50&amp;c=7" alt="how to check citibank credit card balance through sms">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-find-out-my-iban-number-monzo.html" class="be-post-title">
+				 <h6>how do i find out my iban number monzo </h6>
+                </a>
+                <a href="how-do-i-find-out-my-iban-number-monzo.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20find%20out%20my%20iban%20number%20monzo&amp;w=50&amp;h=50&amp;c=7" alt="how do i find out my iban number monzo">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        How To Block First Bank Atm Card Using Ussd Code at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "How To Block First Bank Atm Card Using Ussd Code",
+  "datePublished": "2022-05-19T01:42:12Z",
+  "image": "https://tse1.mm.bing.net/th?q=how%20to%20block%20first%20bank%20atm%20card%20using%20ussd%20code",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=how%20to%20block%20first%20bank%20atm%20card%20using%20ussd%20code&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20block%20first%20bank%20atm%20card%20using%20ussd%20code" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20block%20first%20bank%20atm%20card%20using%20ussd%20code" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            How To Block First Bank Atm Card Using Ussd Code at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">How To Block First Bank Atm Card Using Ussd Code</h2>
+    <p><strong>How To Block First Bank Atm Card Using Ussd Code</strong>. We have listened to customer complaints and have now introduced the *901*911# ussd code, a solution that allows customers act swiftly. This is the fastest way to block your zenith bank card.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=how%20to%20block%20first%20bank%20atm%20card%20using%20ussd%20code" alt="FirstBank USSD Code for All Transactions" />
+        <br>
+        <figcaption>FirstBank USSD Code for All Transactions from www.wazobiawap.com.ng</figcaption>
+    </figure>
+        <p>
+        Dial *901*11# from any phone number,. In summary, to use first bank ussd code to block your bank account if stolen or lost, send block to 30012 via text message on your phone. It’s easy because it only requires a few steps through the use of ussd code.
+    </p>
+    <h3>FirstBank USSD Code for All Transactions</h3>
+    <p>Here are some of the numbers you can use if you want to block your bank account: It’s easy because it only requires a few steps through the use of ussd code. Send block to 30012 via text message: Select your card type and then click on hot list card , and you will be.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FMCB Transfer USSD Code See How To Activate FCMB Transfer Code" data-src="https://i2.wp.com/recruitmentnobs.com.ng/wp-content/uploads/2021/08/FCMB-Transfer-USSD-Code.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: recruitmentnobs.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Here is how to recharge airtime for others (load card) with the first bank ussd code. Input your secret question answer. Block zenith card using ussd code. Debit card and first bank account block code. Here are some of the numbers you can use if you want to block your bank account:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Block First Bank Account From Another Phone BLIUCK" data-src="https://i.pinimg.com/originals/04/6c/90/046c90b94baf3aaad05cd82482aed915.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bliuck.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perhaps, you want to recharge for a friend, family member or loved one. Debit card and first bank account block code. By sending messages on whatsapp to these numbers you can also block your fcmb atm card (+234) 09099999815 or (+234) 09099999814. Once you dial this number on your phone, you’ll see a screen warning you that you’ll shell out.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Block My Zenith Atm Card howto" data-src="https://i2.wp.com/pbs.twimg.com/media/EckDkzhWsAAStdn.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: hwtob.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Dial *894*amount*phone number# for example *894*500*08012345678# how to check account balance using first bank ussd code to check your first bank account balance: Stay safe, don’t be careless with your atm debit card, don’t share your banking details with yahoo boys. To block your atm card is a straight foward method all you need do is to :send block card.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FirstBank USSD Code for All Transactions" data-src="https://i2.wp.com/1.bp.blogspot.com/-wKyIIUfx5cc/Wl8OIeb0EoI/AAAAAAAACVY/D_F3Y8jHZI4ehvbDW9WzsRtmG3jn2o6kACLcBGAs/s1600/IMG_20180107_095602firstbank.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wazobiawap.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Quick banking with firstbank ussd code *894# quick, convenient, secure and easy way of banking 894 is a quick, convenient, secure and easy way to perform your banking transactions (transfer money, check balance, buy airtime, pay bills and lots more) anytime and anywhere, using any type of phone without need for internet connectivity or data. Dial *901*11# from any phone.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Activate My Gtb Atm Card For Online Payment PAYNEMT" data-src="https://i2.wp.com/www.gtbankuk.com/uploads/transforms/businessbanking/41243/banner-img-bb-corporate-cards@2x_af599ee76a60a3ffac0b778428c6ae2f.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: paynemt.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">This is the fastest way to block your zenith bank card. Using a ussd code for activities like blocking an account or debit card is one of the fastest and easiest means for an account holder to safeguard his funds and identity. You can as well contact the gtconnect using the following contacts. By sending messages on whatsapp to these.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How To Block Debit Transactions on GTBank, Zenith Bank Cards The" data-src="https://i0.wp.com/mobility.com.ng/wp-content/uploads/2020/08/eazybanking-account-protection-code.jpg?resize=600%2C350&amp;is-pending-load=1#038;ssl=1" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: mobility.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To block or deactivate your first bank account number or atm card, dial * 894 *911# with the mobile phone line linked to your account with the bank. You can as well contact the gtconnect using the following contacts. Alternatively you can reach fidelity bank customer care for atm card blocking on. How to block an access bank account. Another.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FCMB USSD Code How to Register, transfer money, buy airtime Etimes" data-src="https://i2.wp.com/etimes.com.ng/wp-content/uploads/2021/01/bank.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: etimes.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Once you dial this number on your phone, you’ll see a screen warning you that you’ll shell out an n6.98 service charge for all banking. All you need to do is send “hotlist” to gtbank customer care service via 08076665555. This method is way faster and doesn’t consume time you don’t need a smartphone or internet connection to do this.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FCMB Transfer USSD Code See How to Activate FCMB Transfer Code" data-src="https://i2.wp.com/recruitmentnobs.com.ng/wp-content/uploads/2021/08/fcmb.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: recruitmentnobs.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Perhaps, you want to recharge for a friend, family member or loved one. It is similar to a credit card, but unlike a credit card, the money is immediately transferred directly from the cardholder’s bank account when performing any. They just don’t recognize each other fcmb agent banking started in year 2014 with a revamped solution introduced in. Dial *901*11#.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="FMCB Transfer USSD Code See How To Activate FCMB Transfer Code" data-src="https://i2.wp.com/recruitmentnobs.com.ng/wp-content/uploads/2021/08/fcmb-768x768.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: recruitmentnobs.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Input your secret question answer. Block zenith card using ussd code. The card will be banned within a few minutes and cannot be used for cash withdrawals or purchase of goods and services until you visit your bank to unlock it. They just don’t recognize each other fcmb agent banking started in year 2014 with a revamped solution introduced in..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Block your FCMB ATM Card Bank Guide (NGR)" data-src="https://i2.wp.com/bankguide.com.ng/wp-content/uploads/2021/01/how-to-block-your-FCMB-ATM-card.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bankguide.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Product of lusaka online other lenders — ecobank and fidelity bank — have also lowered credit cards an atm of oceanic bank cannot be used in ecobank and the atm of oceanic cannot be used in ecobank; You dialed *901*911# from a third party phone number, you will receive a prompt thus; Block zenith card using ussd code. Debit card.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="bic-for-bank-of-ireland-wexford.html" class="be-post-title">
+				 <h6>bic for bank of ireland wexford </h6>
+                </a>
+                <a href="bic-for-bank-of-ireland-wexford.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=bic%20for%20bank%20of%20ireland%20wexford&amp;w=50&amp;h=50&amp;c=7" alt="bic for bank of ireland wexford">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="do-all-bank-accounts-have-an-iban-number.html" class="be-post-title">
+				 <h6>do all bank accounts have an iban number </h6>
+                </a>
+                <a href="do-all-bank-accounts-have-an-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=do%20all%20bank%20accounts%20have%20an%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="do all bank accounts have an iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="do-us-accounts-have-iban-numbers.html" class="be-post-title">
+				 <h6>do us accounts have iban numbers </h6>
+                </a>
+                <a href="do-us-accounts-have-iban-numbers.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=do%20us%20accounts%20have%20iban%20numbers&amp;w=50&amp;h=50&amp;c=7" alt="do us accounts have iban numbers">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="does-anz-have-an-iban-number.html" class="be-post-title">
+				 <h6>does anz have an iban number </h6>
+                </a>
+                <a href="does-anz-have-an-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=does%20anz%20have%20an%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="does anz have an iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-transfer-money-using-first-bank-ussd-code.html" class="be-post-title">
+				 <h6>how to transfer money using first bank ussd code </h6>
+                </a>
+                <a href="how-to-transfer-money-using-first-bank-ussd-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20money%20using%20first%20bank%20ussd%20code&amp;w=50&amp;h=50&amp;c=7" alt="how to transfer money using first bank ussd code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-create-wema-bank-ussd-pin.html" class="be-post-title">
+				 <h6>how to create wema bank ussd pin </h6>
+                </a>
+                <a href="how-to-create-wema-bank-ussd-pin.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20create%20wema%20bank%20ussd%20pin&amp;w=50&amp;h=50&amp;c=7" alt="how to create wema bank ussd pin">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-a-german-iban.html" class="be-post-title">
+				 <h6>how to get a german iban </h6>
+                </a>
+                <a href="how-to-get-a-german-iban.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20a%20german%20iban&amp;w=50&amp;h=50&amp;c=7" alt="how to get a german iban">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-back-my-uba-bank-account-number.html" class="be-post-title">
+				 <h6>how to get back my uba bank account number </h6>
+                </a>
+                <a href="how-to-get-back-my-uba-bank-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20back%20my%20uba%20bank%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="how to get back my uba bank account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-deposit-on-sportybet-using-ussd-code.html" class="be-post-title">
+				 <h6>how to deposit on sportybet using ussd code </h6>
+                </a>
+                <a href="how-to-deposit-on-sportybet-using-ussd-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20deposit%20on%20sportybet%20using%20ussd%20code&amp;w=50&amp;h=50&amp;c=7" alt="how to deposit on sportybet using ussd code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-balance-in-my-visa-card.html" class="be-post-title">
+				 <h6>how to check balance in my visa card </h6>
+                </a>
+                <a href="how-to-check-balance-in-my-visa-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20balance%20in%20my%20visa%20card&amp;w=50&amp;h=50&amp;c=7" alt="how to check balance in my visa card">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

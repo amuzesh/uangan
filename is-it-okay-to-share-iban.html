@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Is It Okay To Share Iban at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "Is It Okay To Share Iban",
+  "datePublished": "2022-04-20T06:54:57Z",
+  "image": "https://tse1.mm.bing.net/th?q=is%20it%20okay%20to%20share%20iban",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=is%20it%20okay%20to%20share%20iban&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20it%20okay%20to%20share%20iban" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=is%20it%20okay%20to%20share%20iban" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Is It Okay To Share Iban at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Is It Okay To Share Iban</h2>
+    <p><strong>Is It Okay To Share Iban</strong>. The iban is also a construct made up of the 4 letter bank core swift id, sort code and account number (with an additional check digit). How secure fb messaging is i couldn&#039;t say, but i doubt if it&#039;s any less secure than any other means of communication other than a face to face conversation.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=is%20it%20okay%20to%20share%20iban" alt="Bank Sort Code And Account Number XYZ de Code" />
+        <br>
+        <figcaption>Bank Sort Code And Account Number XYZ de Code from xyzdecode.blogspot.com</figcaption>
+    </figure>
+        <p>
+        It can be up to 34 characters in length. In most european countries it&#039;s actually normal for businesses to have their full bank details made public on websites. If you have someone&#039;s account number you can construct the iban.
+    </p>
+    <h3>Bank Sort Code And Account Number XYZ de Code</h3>
+    <p>Although some paid money services do charge a small fee, they are more convenient and secure. In terms of security it is perfectly safe to give out your bic/iban. Do you have a skype account, facebook account, in fact any kind of. It&#039;s 100% safe to hand out iban details.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Iban Wallet fraud investigated by Latvian authorities by Kristaps" data-src="https://i2.wp.com/cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https://i2.wp.com/bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/50cfbd3f-4275-4bcc-9bc0-0281c5ed4280_3287x1080.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kristapsmors.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Start date jun 14, 2021; A swift bic is made up of eight. Bic should be on the line above your iban on your bank statement. The reason for this is that it uses a messaging system that enables banks to share a large number of financial data. But in which cases is it safe to give someone your bank.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Who owns IBAN Wallet? Kristaps Mors" data-src="https://i2.wp.com/cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https://i2.wp.com/bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/3132418e-349f-4a4e-aa30-b3358422364d_1717x625.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kristapsmors.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Well with just an iban nothing but you probably gave a name as well and maybe other information. The scammer will first pretend to be a manager of the client company and ask the supplier for information about outstanding invoices. Even here in ireland all companies display their bank details on their invoice. The iban is also a construct made.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bank Sort Code And Account Number XYZ de Code" data-src="https://i2.wp.com/lh6.googleusercontent.com/proxy/OnN-2IqYI4JTXibSieSSLEiCoazDIvCHHQqNrXsBxO3MoFYJGZTGcYgTYO2TLvnPNBrceYhjOCvIKTiMxc8dD0nZxCF3-mLWfJhoRKkF30BXwTT0xQ=w1200-h630-p-k-no-nu" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: xyzdecode.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The length of the customer account number in the iban is fixed as 1 6 characters. Also, you need to make sure your bank is a good money transfer provider. Although some paid money services do charge a small fee, they are more convenient and secure. Both an international bank account number (iban) and a society for worldwide interbank financial.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bankera Review Free personal and business European IBAN accounts to" data-src="https://i2.wp.com/soccergist.net/wp-content/uploads/2020/10/bankera-review-alternative.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: soccergist.net</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Depending on the method used, the fraudulent iban is accompanied by one or more false invoices. However, consumers should rest easy knowing that no money was actually taken. An iban serves as an international bank account number and is in addition to your sort code and account number. As far as risk, it&#039;s safer then a paypal transfer. Iban facilitates.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Best CC Generator CC Checker IBAN Checker HQ Website 100 Free" data-src="https://i2.wp.com/1.bp.blogspot.com/-IshuOIkMApg/X2n5KBpfBxI/AAAAAAAAJXc/bZgfzWJb0hkSrsCEqMQFly81DK6jIs9qgCLcBGAsYHQ/w1200-h630-p-k-no-nu/2020-09-22%2B18_15_30-Window.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: crackingtutor1al.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The iban is also a construct made up of the 4 letter bank core swift id, sort code and account number (with an additional check digit). There is very little security in the us for bank drafts. Even with authorization the payment can be canceled by the account owner without giving any reason within 2 months of the payment, no.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bank Identification Code On Check Bank Identification Number (BIN" data-src="https://i2.wp.com/qph.fs.quoracdn.net/main-qimg-f8b8def3f56a1343710fd68d192d0702" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: kerak-helm.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Unfortunately in the uk given someones sort code and account number it is possible to attempt to set up a fraudulent direct debit. In the case of uae, the bank identifier is the 3 digits following the check digits. If you have someone&#039;s account number you can construct the iban. With your bank account routing number it is very easy.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="No IBAN to withdraw funds in Canada Etoro" data-src="https://i2.wp.com/i.redd.it/7lyaf109xew41.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.reddit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Well with just an iban nothing but you probably gave a name as well and maybe other information. I belive other countries are similar. A bank identifier code (bic) is usually used interchangeably with a swift code, as both have a mix of letters and numbers that are between eight and 11 characters long. At least in the uk an.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="iBAN Wallet SEIS Crowdfunding Campaign Seedrs" data-src="https://i2.wp.com/seedrs.imgix.net/uploads/startup/section_image/image/10473/6lq2pcp8nszvzjxzleax8852ig9cpmz/iBAN_Club_Member__.jpg?rect=-8%2C0%2C1250%2C1861&amp;w=600&amp;fit=clip&amp;auto=compress&amp;q=90&amp;s=95d5942f1d114e3362a32a28b3b4067d" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.seedrs.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Another thing people can do is buy stuff online with demand drafts. Well with just an iban nothing but you probably gave a name as well and maybe other information. The iban is also a construct made up of the 4 letter bank core swift id, sort code and account number (with an additional check digit). But you are welcome.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bank does no have an IBAN code Help &amp; Support Unibet Community" data-src="https://i2.wp.com/content-eu.invisioncic.com/b310290/monthly_2017_03/2073361617_Sinttulo-1.jpg.3fe3aa86249cc9914f0e651861f63ca2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.unibetcommunity.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you do that you we i&#039;ll simply be sharing your bank account.not highly recommended to share such top secret financial personal information to the public. Well with just an iban nothing but you probably gave a name as well and maybe other information. With your bank account routing number it is very easy for people to draw funds without.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Iban Wallet Review 2020 Online Investment Platform Pros &amp; Cons" data-src="https://i2.wp.com/moneycheck-9fcd.kxcdn.com/wp-content/uploads/2020/01/iban-wallet-review-770x515.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: moneycheck.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">I belive other countries are similar. Start date jun 14, 2021; In most european countries it&#039;s actually normal for businesses to have their full bank details made public on websites. How secure fb messaging is i couldn&#039;t say, but i doubt if it&#039;s any less secure than any other means of communication other than a face to face conversation. The.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-add-a-debit-card-to-robinhood.html" class="be-post-title">
+				 <h6>how do i add a debit card to robinhood </h6>
+                </a>
+                <a href="how-do-i-add-a-debit-card-to-robinhood.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20add%20a%20debit%20card%20to%20robinhood&amp;w=50&amp;h=50&amp;c=7" alt="how do i add a debit card to robinhood">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-anz-fiji-bsb-number.html" class="be-post-title">
+				 <h6>what is anz fiji bsb number </h6>
+                </a>
+                <a href="what-is-anz-fiji-bsb-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20anz%20fiji%20bsb%20number&amp;w=50&amp;h=50&amp;c=7" alt="what is anz fiji bsb number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-get-my-santander-iban-number.html" class="be-post-title">
+				 <h6>how do i get my santander iban number </h6>
+                </a>
+                <a href="how-do-i-get-my-santander-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20get%20my%20santander%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="how do i get my santander iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-my-hsbc-bank-code.html" class="be-post-title">
+				 <h6>what is my hsbc bank code </h6>
+                </a>
+                <a href="what-is-my-hsbc-bank-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20my%20hsbc%20bank%20code&amp;w=50&amp;h=50&amp;c=7" alt="what is my hsbc bank code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-iban-number-habib-bank-limited.html" class="be-post-title">
+				 <h6>how to find iban number habib bank limited </h6>
+                </a>
+                <a href="how-to-find-iban-number-habib-bank-limited.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20iban%20number%20habib%20bank%20limited&amp;w=50&amp;h=50&amp;c=7" alt="how to find iban number habib bank limited">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="can-t-find-santander-agreement-number.html" class="be-post-title">
+				 <h6>can&#039;t find santander agreement number </h6>
+                </a>
+                <a href="can-t-find-santander-agreement-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=can%27t%20find%20santander%20agreement%20number&amp;w=50&amp;h=50&amp;c=7" alt="can&amp;#039;t find santander agreement number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-get-your-sort-code-and-account-number.html" class="be-post-title">
+				 <h6>how to get your sort code and account number </h6>
+                </a>
+                <a href="how-to-get-your-sort-code-and-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20get%20your%20sort%20code%20and%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="how to get your sort code and account number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-transfer-money-from-wema-to-other-bank.html" class="be-post-title">
+				 <h6>how to transfer money from wema to other bank </h6>
+                </a>
+                <a href="how-to-transfer-money-from-wema-to-other-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20money%20from%20wema%20to%20other%20bank&amp;w=50&amp;h=50&amp;c=7" alt="how to transfer money from wema to other bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-balance-on-steward-bank.html" class="be-post-title">
+				 <h6>how to check balance on steward bank </h6>
+                </a>
+                <a href="how-to-check-balance-on-steward-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20balance%20on%20steward%20bank&amp;w=50&amp;h=50&amp;c=7" alt="how to check balance on steward bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-know-if-my-walmart-visa-gift-card-is-activated.html" class="be-post-title">
+				 <h6>how do i know if my walmart visa gift card is activated </h6>
+                </a>
+                <a href="how-do-i-know-if-my-walmart-visa-gift-card-is-activated.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20know%20if%20my%20walmart%20visa%20gift%20card%20is%20activated&amp;w=50&amp;h=50&amp;c=7" alt="how do i know if my walmart visa gift card is activated">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        Where Is My Swift Code at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "Where Is My Swift Code",
+  "datePublished": "2022-05-31T08:10:58Z",
+  "image": "https://tse1.mm.bing.net/th?q=where%20is%20my%20swift%20code",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=where%20is%20my%20swift%20code&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=where%20is%20my%20swift%20code" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=where%20is%20my%20swift%20code" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            Where Is My Swift Code at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">Where Is My Swift Code</h2>
+    <p><strong>Where Is My Swift Code</strong>. You may see 3 extra digits added to represent a. You’ll see a new column with ibans for all of your accounts.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=where%20is%20my%20swift%20code" alt="Swift code là gì? Mã swift code của đầy đủ THÔNG TIN GIẢI TRÍ" />
+        <br>
+        <figcaption>Swift code là gì? Mã swift code của đầy đủ THÔNG TIN GIẢI TRÍ from sixdegreesfromdave.com</figcaption>
+    </figure>
+        <p>
+        Select &#039;account information&#039; in the left hand menu, then &#039;view account statement&#039;. Then comes the location code. Swift stands for society for worldwide interbank financial.
+    </p>
+    <h3>Swift code là gì? Mã swift code của đầy đủ THÔNG TIN GIẢI TRÍ</h3>
+    <p>· gb is the country code. You can find your bic or swift on your paper. Using this standard, globally recognised format is. The swift code identifies a bank, and the iban (which stands for international bank account number) identifies an account.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How can I find my SWIFT code? ArabClicks" data-src="https://i2.wp.com/storage.googleapis.com/arabclicks-morexa.appspot.com/2020/11/Al-Rajhi-Bank-SWIFT-Code.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.arabclicks.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anz&#039;s swift code is anzbnz22. The swift code identifies a bank, and the iban (which stands for international bank account number) identifies an account. The first four characters are the bank code. It&#039;s your account number written. Select the &#039;account id&#039; of the account you need the bic/swift or iban for.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to find bank Swift code online 2020 know your bank&#039;s swift code" data-src="https://i2.wp.com/1.bp.blogspot.com/-VwtMntalgJ8/XsUMUEoi4HI/AAAAAAAAHgU/ns-NrifY8n0kdHTQuO5L4ugMJBS9N0y9wCNcBGAsYHQ/s1600/IMG_20200520_161007.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.besmartbuddy.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To provide crucial details during the process of transferring funds. The iban can certify a bank account anywhere in the. A number of significant changes impact the standard iso 9362 business. Starling’s bank code is srlg. You may see 3 extra digits added to represent a.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Official SWIFT Code of BDO, BPI, Metrobank, Philippine banks » Pinoy" data-src="https://i2.wp.com/www.pinoymoneytalk.com/wp-content/uploads/2020/07/swift-code-bic-bank-philippines-768x768.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinoymoneytalk.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">It&#039;s your account number written. T he swift code tool checks the validity of your code based on our complete database of more than 100,000 unique swift codes. Select the &#039;account id&#039; of the account you need the bic/swift or iban for. Swift codes of philippine banks. Then comes the location code.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SWIFT/BIC Codes of All Banks of Nepal TechnoKD" data-src="https://i2.wp.com/technokd.com/wp-content/uploads/2020/11/Swift-Code2-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: technokd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To save you time and effort, here’s a full list of swift codes of major banks in the philippines: · gb is the country code. The iban can certify a bank account anywhere in the. Using this standard, globally recognised format is. The first four characters are the bank code.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="SWIFT Code" data-src="https://i2.wp.com/banksinbd.com/wp-content/uploads/2020/09/swift-code.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: banksinbd.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Anz&#039;s swift code is anzbnz22. Using this standard, globally recognised format is. To save you time and effort, here’s a full list of swift codes of major banks in the philippines: Other names for the bic include swift code,. You can find your bic or swift on your paper.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Swift code là gì? Mã swift code của đầy đủ THÔNG TIN GIẢI TRÍ" data-src="https://i2.wp.com/sixdegreesfromdave.com/wp-content/uploads/2019/05/image4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: sixdegreesfromdave.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Swift stands for society for worldwide interbank financial. Search for the required branch and select. Tick iban and select ok. To provide crucial details during the process of transferring funds. Starling’s bank code is srlg.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="BANK SWIFT CODE WHAT YouTube" data-src="https://i2.wp.com/i.ytimg.com/vi/jgur3dkdxDM/maxresdefault.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.youtube.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">The bic code is easily identifiable as it is made up of 8 or 11 characters broken down as such: Anz&#039;s swift code is anzbnz22. You may see 3 extra digits added to represent a. Select &#039;account information&#039; in the left hand menu, then &#039;view account statement&#039;. These last 3 digits are optional, though.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What is swift Code? List of swift codes of banks in Philippines" data-src="https://i2.wp.com/fastloans.ph/wp-content/uploads/2021/01/What_is_a_SWIFT_code.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: fastloans.ph</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Swift codes and bic codes are part of the iso 9362 standards for sending money internationally. About swift code search &amp; finder tool. An iban and a bic (or swift code) are used to make international payments faster, safer and cheaper. It usually looks like a shortened version of that bank&#039;s. Starling’s bank code is srlg.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="What is Swift code? FAQ guide from WorldRemit" data-src="https://i2.wp.com/images.ctfassets.net/5u2sttmumgqx/2Ougl2NNWnmj8r4XjjfY8c/710337e1be5f6ba3f6fa3dcaa15f6e96/How_to_find_swift_code_on_bank_statetment" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.worldremit.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">An iban and a bic (or swift code) are used to make international payments faster, safer and cheaper. Tick iban and select ok. A number of significant changes impact the standard iso 9362 business. Use our bank code search tool to find swift codes, bic codes and other bank codes to send money internationally from canada. To help you understand.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to find SWIFT Code on your bank account? AshInfoBD Latest" data-src="https://i2.wp.com/2.bp.blogspot.com/-_5p6QtwpY1w/WUvj1GxHd7I/AAAAAAAAFDw/wlzEU3u0wfAJ-M2-GvIol5s17-6N0vbFgCLcBGAs/s1600/Jessore%2BBranch%2BIslamic%2BBank%2BSWITCH%2BCOde.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: ashinfobd.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Select &#039;account information&#039; in the left hand menu, then &#039;view account statement&#039;. Find swift / bic / bank codes. Swift codes and bic codes are part of the iso 9362 standards for sending money internationally. Using this standard, globally recognised format is. The next two characters are the country code.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-iban-the-same-as-aba-number.html" class="be-post-title">
+				 <h6>is iban the same as aba number </h6>
+                </a>
+                <a href="is-iban-the-same-as-aba-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20iban%20the%20same%20as%20aba%20number&amp;w=50&amp;h=50&amp;c=7" alt="is iban the same as aba number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-your-banks-iban-number.html" class="be-post-title">
+				 <h6>how to find your banks iban number </h6>
+                </a>
+                <a href="how-to-find-your-banks-iban-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20your%20banks%20iban%20number&amp;w=50&amp;h=50&amp;c=7" alt="how to find your banks iban number">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-register-uba-bank-ussd-code-without-atm-card.html" class="be-post-title">
+				 <h6>how to register uba bank ussd code without atm card </h6>
+                </a>
+                <a href="how-to-register-uba-bank-ussd-code-without-atm-card.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20register%20uba%20bank%20ussd%20code%20without%20atm%20card&amp;w=50&amp;h=50&amp;c=7" alt="how to register uba bank ussd code without atm card">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-bank-account-number-bank-of-america.html" class="be-post-title">
+				 <h6>how to find bank account number bank of america </h6>
+                </a>
+                <a href="how-to-find-bank-account-number-bank-of-america.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20bank%20account%20number%20bank%20of%20america&amp;w=50&amp;h=50&amp;c=7" alt="how to find bank account number bank of america">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-can-i-check-my-icici-personal-loan-balance.html" class="be-post-title">
+				 <h6>how can i check my icici personal loan balance </h6>
+                </a>
+                <a href="how-can-i-check-my-icici-personal-loan-balance.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20can%20i%20check%20my%20icici%20personal%20loan%20balance&amp;w=50&amp;h=50&amp;c=7" alt="how can i check my icici personal loan balance">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-transfer-money-from-gtb-to-wema-bank.html" class="be-post-title">
+				 <h6>how to transfer money from gtb to wema bank </h6>
+                </a>
+                <a href="how-to-transfer-money-from-gtb-to-wema-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20transfer%20money%20from%20gtb%20to%20wema%20bank&amp;w=50&amp;h=50&amp;c=7" alt="how to transfer money from gtb to wema bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="standard-bank-ussd-code-to-send-money.html" class="be-post-title">
+				 <h6>standard bank ussd code to send money </h6>
+                </a>
+                <a href="standard-bank-ussd-code-to-send-money.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=standard%20bank%20ussd%20code%20to%20send%20money&amp;w=50&amp;h=50&amp;c=7" alt="standard bank ussd code to send money">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="iban-numbers-british-banks.html" class="be-post-title">
+				 <h6>iban numbers british banks </h6>
+                </a>
+                <a href="iban-numbers-british-banks.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=iban%20numbers%20british%20banks&amp;w=50&amp;h=50&amp;c=7" alt="iban numbers british banks">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-your-account-number-danske-bank.html" class="be-post-title">
+				 <h6>how to find your account number danske bank </h6>
+                </a>
+                <a href="how-to-find-your-account-number-danske-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20your%20account%20number%20danske%20bank&amp;w=50&amp;h=50&amp;c=7" alt="how to find your account number danske bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="where-do-i-see-my-bank-account-number.html" class="be-post-title">
+				 <h6>where do i see my bank account number </h6>
+                </a>
+                <a href="where-do-i-see-my-bank-account-number.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=where%20do%20i%20see%20my%20bank%20account%20number&amp;w=50&amp;h=50&amp;c=7" alt="where do i see my bank account number">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>

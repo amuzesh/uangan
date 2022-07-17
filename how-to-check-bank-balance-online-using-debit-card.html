@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+    <meta name="theme-color" content="#ffffff"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <title>
+        How To Check Bank Balance Online Using Debit Card at Finance
+    </title>
+    <style type="text/css">
+	html {
+	box-sizing:border-box;
+	-ms-overflow-style:scrollbar
+}
+body {
+	margin:0 auto;
+	font-family:'Roboto',sans-serif;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#212529;
+	text-align:left;
+	background-color:#fff
+}
+.top_main {
+	margin-top:100px;
+}
+footer {
+	text-align:center
+}
+table {
+	display:table
+}
+*,*::before,*::after {
+	box-sizing:inherit
+}
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	padding:.375rem .75rem;
+	margin:0.5rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.btn-danger {
+	color:#fff;
+	background-color:#dc3545;
+	border-color:#dc3545
+}
+.btn-success {
+	color:#fff;
+	background-color:#28a745;
+	border-color:#28a745
+}
+.btn-group-sm>.btn,.btn-sm {
+	padding:.25rem .5rem;
+	font-size:.875rem;
+	line-height:1.5;
+	border-radius:.2rem
+}
+.hide {
+	display:none;
+	visibility:hidden
+}
+.popbox {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1000000
+}
+.pop-content {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:2;
+	box-shadow:0 3px 20px 0 rgba(0,0,0,.5)
+}
+.popcontent {
+	padding:20px;
+	background:#fff;
+	border-radius:5px;
+	overflow:hidden
+}
+.pop-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:1;
+	background:rgb(255 255 255 / 93%)
+}
+.popbox-close-button {
+	position:absolute;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	top:-14px;
+	right:-14px;
+	color:#c82333;
+	background-color:#fff;
+	box-shadow:0 -1px 1px 0 rgba(0,0,0,.2);
+	border:none;
+	border-radius:50%;
+	cursor:pointer;
+	font-size:28px;
+	font-weight:700;
+	padding:0
+}
+.popcontent img {
+	width:100%;
+	height:100%;
+	display:block
+}
+.flowbox {
+	position:relative;
+	overflow:hidden
+}
+@media  screen and (max-width:840px) {
+	.pop-content {
+		width:90%;
+		height:auto;
+		top:20%
+	}
+	.popcontent img {
+		height:auto
+	}
+}
+.image-parent {
+	max-width: 40px;
+}
+.bg-cs {
+    background-color: #02b55e!important;
+}
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+
+.be-post.style-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.be-post {
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.be-post.style-2 .be-post-date {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #b4b7c1;
+    margin: 0 15px 15px 15px;
+}
+
+.be-post.style-2 .be-post-title {
+    padding-bottom: 0px;
+    margin: 0 15px 15px 15px;
+    border-bottom: none;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post-title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+    color: #262626;
+    border-bottom: 1px solid #edeff2;
+    margin: 0 15px 10px 15px;
+    cursor: pointer;
+    min-height: 52px;
+    padding-bottom: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.be-post.style-2 a {
+    min-height: 0;
+}
+
+.be-post .be-img-block {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.be-img-block {
+    overflow: hidden;
+    display: block;
+}
+
+.be-post .be-img-block img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all 0.3s;
+}
+
+.be-post > span {
+    color: #b4b7c1;
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+hr.new2 {
+  border-top: 2px dashed #02b55e;
+}
+        </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Ambrid",
+    "url": "https://www.google.com/search?q=Ambrid"
+  },
+  "headline": "How To Check Bank Balance Online Using Debit Card",
+  "datePublished": "2022-06-29T16:45:30Z",
+  "image": "https://tse1.mm.bing.net/th?q=how%20to%20check%20bank%20balance%20online%20using%20debit%20card",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Finance Info",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tse1.mm.bing.net/th?q=how%20to%20check%20bank%20balance%20online%20using%20debit%20card&amp;w=250&amp;h=250&amp;c=7",
+      "width": 250,
+      "height": 250
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://i2.wp.com">
+<link rel="dns-prefetch" href="https://i2.wp.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20check%20bank%20balance%20online%20using%20debit%20card" as="image" media="(max-width: 420px)">
+<link rel="preload" href="https://tse1.mm.bing.net/th?q=how%20to%20check%20bank%20balance%20online%20using%20debit%20card" as="image" media="(min-width: 420.1px)" >
+    <!-- Head tag Code -->
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-cs fixed-top py-3">
+      <a class="navbar-brand" href="/">
+        Finance Info
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+              <a class="nav-link" href="dmca.html">Dmca</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+            </li>
+                        <li class="nav-item">
+              <a class="nav-link" href="copyright.html">Copyright</a>
+            </li>
+                      
+        </ul>
+        <form id="search-box" class="form-inline my-2 my-lg-0" >
+          <div class="input-group">
+                            <input id="search_query" type="text" class="form-control" aria-label="Search input" placeholder="Search here..">
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container top_main">
+
+      <header>
+        <center>
+          <h1>
+            How To Check Bank Balance Online Using Debit Card at Finance
+          </h1>
+          <p class="lead">
+                          Best Finance Ideas &amp; Info 2022 . Search anything about Finance in this website.
+                      </p>
+        </center>
+      </header>
+	<div class="album py-5">
+	<div class="container">
+      <div class="row">
+      
+          <div class="content">
+<div class="blog-post">
+<h2 class="blog-post-title">How To Check Bank Balance Online Using Debit Card</h2>
+    <p><strong>How To Check Bank Balance Online Using Debit Card</strong>. How to check balance on unemployment card. Select any upi app and install it on your mobile.</p>
+        <figure>
+        <img class="img-fluid mx-auto d-block ads-img" src="https://tse1.mm.bing.net/th?q=how%20to%20check%20bank%20balance%20online%20using%20debit%20card" alt="5 ways to check debit card balance without visiting the bank or ATM" />
+        <br>
+        <figcaption>5 ways to check debit card balance without visiting the bank or ATM from seeknemo.com</figcaption>
+    </figure>
+        <p>
+        To check your bank balance via upi, follow the steps below: You can also dial the customer service number of your bank or visit its atm to know. To find the website, type the name of your bank into your internet browser’s search bar.
+    </p>
+    <h3>5 ways to check debit card balance without visiting the bank or ATM</h3>
+    <p>3 ﻿ with most debit cards, this is your home address. Enter your account number, registered mobile number, registered email address, debit card number and cvv number. Now the atm michine relesed a print that reflect balance statement along with transction details. You can also dial the customer service number of your bank or visit its atm to know.</p>
+
+
+
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Block Gtbank and Zenith Bank ATM Debit Card in case of fraud" data-src="https://i2.wp.com/etimes.com.ng/wp-content/uploads/2021/01/How-to-Block-Gtbank-and-Zenith-Bank-ATM-Debit-Card-in-case-of-fraud.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: etimes.com.ng</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">If you have intrested get a copy of print, proceed with print option. Debit cards can be a useful tool in managing your personal finances. Here are the steps they need to follow: Verify with four digit pin number. For the first time users:</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Pay Online With Debit or Credit Cards (Safely)" data-src="https://i2.wp.com/www.thebalance.com/thmb/6wUxHUBpJgZpRLygeV3O8l26Y0c=/950x0/filters:max_bytes(150000):strip_icc()/can-i-use-a-debit-card-online-315325-v6-5b6891cd46e0fb00253b6efe.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.thebalance.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">When you call, you may be asked to enter identifying information such as your debit card or checking account number, social security number and pin. To check your bank balance via upi, follow the steps below: Head inside to the teller and ask for your balance. Debit cards help initiate transactions and check bank balance; When using a debit card,.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Check the Balance of a Debit Card 10 Steps (with Pictures)" data-src="https://i2.wp.com/www.wikihow.com/images/thumb/8/82/Check-the-Balance-of-a-Debit-Card-Step-3.jpg/aid8841594-v4-728px-Check-the-Balance-of-a-Debit-Card-Step-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wikihow.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You can check your account balance online anytime—and much more. You can use mobile, internet, and sms banking to check your balance instantly; One of the easy ways for sbi balance check is by giving a missed call and receiving the details. Thereafter, the system may give you a list of options to choose from to access your available balance..</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Add Cash Directly to Your Reloadable Debit Card Green Dot" data-src="https://i2.wp.com/www.greendot.com/content/dam/greendot/credit-cards/moneypak_small.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.greendot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Complete the transaction after viewing the balance displayed on the screen. It’s easy to check your bank account online from anywhere you have internet access. In most cases, you’ll look for an option like “login” or “account access.”. Thereafter, the system may give you a list of options to choose from to access your available balance. Drive to your nearest.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Inquire Balance on BDO Cash Card Online Banking 27664" data-src="https://i2.wp.com/www.affordablecebu.com/pictures/articles/banking_3/BDO-Online-Banking-Website.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.affordablecebu.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">You need to follow the below steps to check your axis bank account balance. To find the website, type the name of your bank into your internet browser’s search bar. Track sbi credit card status. Provide your id and debit card to confirm your identity. If you’d like a printed copy.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Check the Balance of a Debit Card 10 Steps (with Pictures)" data-src="https://i2.wp.com/www.wikihow.com/images/thumb/b/ba/Check-the-Balance-of-a-Debit-Card-Step-2.jpg/aid8841594-v4-728px-Check-the-Balance-of-a-Debit-Card-Step-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.wikihow.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Lock and unlock your debit cardafter signing in, tap the checking account your debit card is linked to.swipe up. You will receive the details of the sbi bank balance. For the first time users: Search for jobs related to how to check bank balance online using debit card or hire on the world&#039;s largest freelancing marketplace with 21m+ jobs. When.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="35 FREE TUTORIAL HOW TO CHECK BALANCE THROUGH ATM CARD 2019 * Balance" data-src="https://i2.wp.com/www.wikihow.com/images/thumb/d/d8/Check-Your-Bank-Balance-Step-4.jpg/aid4913531-v4-728px-Check-Your-Bank-Balance-Step-4.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: balance-0.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Transfer funds to a bank account. You can check your account balance by a following a few simple steps. It&#039;s free to sign up and bid on jobs. Verify with four digit pin number. Using an atm with a debit or atm card;</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="Bdo Account Number Debit Card Office Manager Cover Letter" data-src="https://i.pinimg.com/originals/de/cf/6b/decf6b0241139c48cd2471feb015803f.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: bodumcoffeepotbest.blogspot.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">Check the balance of your checking account by: How to check the balance of your debit card. This is specifically for those with a debit card connected to a bank or credit union. For the first time users: You can do this by visiting the nearest axis atm or any other bank atm.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="How to Check ATM Balance Online A StepbyStep Guide Pinoy Techno Guide" data-src="https://i2.wp.com/www.pinoytechnoguide.com/wp-content/uploads/2012/10/check-atm-balance-online.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: www.pinoytechnoguide.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">To find the website, type the name of your bank into your internet browser’s search bar. Swipe the axis atm cum debit card. Complete the transaction after viewing the balance displayed on the screen. After entering the otp which is sent to your registered mobile number, enter the username (new) and password. Track sbi credit card status.</p>
+    </aside>
+
+    <aside>
+        <img class="img-fluid mx-auto d-block ads-img lazyload" alt="5 ways to check debit card balance without visiting the bank or ATM" data-src="https://i2.wp.com/d2hg8ctx8thzji.cloudfront.net/seeknemo.com/wp-content/uploads/2020/07/5waystocheckdebitcardbalancewithoutvisitingthebankorATM.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  />
+        <br>
+        <small>Source: seeknemo.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p align="justify">In most cases, you’ll look for an option like “login” or “account access.”. It’s easy to check your bank account online from anywhere you have internet access. When using a debit card, people pay for an item or service immediately. Enter the 4 digit atm pin. Using the mobile banking app 2 or online banking.</p>
+    </aside>
+</div>
+    
+</div>
+<hr class="new2">
+          <center>
+            <div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>          </center>
+		  
+
+
+	<div class="container">
+	<h2>More  articles : </h2>
+	<div class="row">
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-your-iban-number-hbl.html" class="be-post-title">
+				 <h6>how to check your iban number hbl </h6>
+                </a>
+                <a href="how-to-check-your-iban-number-hbl.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20your%20iban%20number%20hbl&amp;w=50&amp;h=50&amp;c=7" alt="how to check your iban number hbl">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-you-borrow-money.html" class="be-post-title">
+				 <h6>how do you borrow money </h6>
+                </a>
+                <a href="how-do-you-borrow-money.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20you%20borrow%20money&amp;w=50&amp;h=50&amp;c=7" alt="how do you borrow money">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="what-is-the-ussd-code-for-access-diamond-bank.html" class="be-post-title">
+				 <h6>what is the ussd code for access diamond bank </h6>
+                </a>
+                <a href="what-is-the-ussd-code-for-access-diamond-bank.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=what%20is%20the%20ussd%20code%20for%20access%20diamond%20bank&amp;w=50&amp;h=50&amp;c=7" alt="what is the ussd code for access diamond bank">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="is-routing-code-same-as-iban.html" class="be-post-title">
+				 <h6>is routing code same as iban </h6>
+                </a>
+                <a href="is-routing-code-same-as-iban.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=is%20routing%20code%20same%20as%20iban&amp;w=50&amp;h=50&amp;c=7" alt="is routing code same as iban">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-transactions-on-commbank-app.html" class="be-post-title">
+				 <h6>how to check transactions on commbank app </h6>
+                </a>
+                <a href="how-to-check-transactions-on-commbank-app.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20transactions%20on%20commbank%20app&amp;w=50&amp;h=50&amp;c=7" alt="how to check transactions on commbank app">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="barclays-bank-plc-iban-code.html" class="be-post-title">
+				 <h6>barclays bank plc iban code </h6>
+                </a>
+                <a href="barclays-bank-plc-iban-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=barclays%20bank%20plc%20iban%20code&amp;w=50&amp;h=50&amp;c=7" alt="barclays bank plc iban code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-do-i-check-my-routing-number-bank-of-america-app.html" class="be-post-title">
+				 <h6>how do i check my routing number bank of america app </h6>
+                </a>
+                <a href="how-do-i-check-my-routing-number-bank-of-america-app.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20do%20i%20check%20my%20routing%20number%20bank%20of%20america%20app&amp;w=50&amp;h=50&amp;c=7" alt="how do i check my routing number bank of america app">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-view-citibank-credit-card-statement-online.html" class="be-post-title">
+				 <h6>how to view citibank credit card statement online </h6>
+                </a>
+                <a href="how-to-view-citibank-credit-card-statement-online.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20view%20citibank%20credit%20card%20statement%20online&amp;w=50&amp;h=50&amp;c=7" alt="how to view citibank credit card statement online">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-find-barclaycard-account-number-and-sort-code.html" class="be-post-title">
+				 <h6>how to find barclaycard account number and sort code </h6>
+                </a>
+                <a href="how-to-find-barclaycard-account-number-and-sort-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20find%20barclaycard%20account%20number%20and%20sort%20code&amp;w=50&amp;h=50&amp;c=7" alt="how to find barclaycard account number and sort code">
+                </a>
+               </div> 
+        </div>			   
+                          
+<div class="col-xs-12 col-sm-4">			
+              <div class="be-post style-2">
+               <a href="how-to-check-access-bank-account-balance-through-ussd-code.html" class="be-post-title">
+				 <h6>how to check access bank account balance through ussd code </h6>
+                </a>
+                <a href="how-to-check-access-bank-account-balance-through-ussd-code.html" class="be-img-block">
+                    <img src="https://tse1.mm.bing.net/th?q=how%20to%20check%20access%20bank%20account%20balance%20through%20ussd%20code&amp;w=50&amp;h=50&amp;c=7" alt="how to check access bank account balance through ussd code">
+                </a>
+               </div> 
+        </div>			   
+            			  
+	  </div>
+	  </div>
+	  
+	  
+	  
+	  
+	  </div>
+	  </div>
+	  </div>
+	 
+
+    </main><!-- /.container -->
+    <footer class="container border-top mt-4 py-4">
+      <center>2022 Finance Info. All rights reserved </center>
+    </footer>
+        <div class="popbox hide" id="popbox">
+        <div aria-label='Close' class="pop-overlay" role="button" tabindex="0"></div>
+        <div class="pop-content">
+            <div class="popcontent" align="center">
+                <img data-src="https://1.bp.blogspot.com/-y8AsxfEerDc/YFSyMPZF14I/AAAAAAAAAAM/JUegMgSE-3o5A_06mx0Fir2-dkB6fAGvACLcBGAsYHQ/s640/re.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="  width="640" height="320" class="lazyload" alt="" />
+                <button class='g_url btn btn-success btn-dwn m-2'>Confirm</button>
+                <br/>
+            </div>
+            <button class='g_url popbox-close-button'>&times;</button>
+        </div>
+    </div>
+        <!-- Footer CSS JS -->    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" integrity="sha512-JrL1wXR0TeToerkl6TPDUa9132S3PB1UeNpZRHmCe6TxS43PFJUcEYUhjJb/i63rSd+uRvpzlcGOtvC/rDQcDg==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var current     = window.location.href;
+        var origin      = window.location.origin;
+        var g_confirm   = current.includes('c=1');
+        var go_ads      = 'https://trashyepochabsorbing.com/n4wee7154b?key=b48a80bb4c1476f5a79b76ef7176715b';
+        var is_cli      = '1';
+        var is_uads     = '';
+
+        $(document).ready(function()
+        {
+            if(go_ads.includes('//'))
+            {
+                if(!g_confirm && !is_uads)
+                {
+                    $(window).scroll(function (event) {
+                        var scroll = $(window).scrollTop();
+                        if (scroll >= 200) {
+                            $('#popbox').removeClass('hide');
+                        }
+                        console.log('scroll..');                    
+                    });
+                }
+
+                $(document).on('click','.g_url',function(e)
+                {
+                    e.preventDefault();
+
+                    var g_target=current.includes("?")?current+"&c=1":current+"?c=1";
+
+                    window.open(go_ads,"_blank");
+                    window.location.href=g_target;
+                });
+
+                $(document).on('click','.ads-img',function(e)
+                {
+                    e.preventDefault();
+                    window.open(go_ads, '_blank');
+                });
+            }
+
+            $("[id*='google-cache']").remove();        
+
+            $(document).on('submit','#search-box',function(e){
+                e.preventDefault();
+
+                var query = $('#search_query').val();
+                query = query.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').replace(/\s\s+/g, ' ');
+
+                if(is_cli)
+                {
+                  var target  = 'site:'+location.host+' '+query;
+                  var uri     = 'https://www.google.com/search?q='+encodeURIComponent(target);
+                }
+                else
+                {                    
+                    var niche = $('#search_niche').val();
+                    var uri   = `${origin}/search?n=${encodeURIComponent(niche)}&q=${encodeURIComponent(query)}`;
+                }
+                window.open(uri, '_self');
+            });
+        });
+    </script>
+	<script src="//pop.dojo.cc/6488.js"></script>
+  </body>
+</html>
